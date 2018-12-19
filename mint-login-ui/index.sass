@@ -1,0 +1,79 @@
+$light: #c8e4d8
+$deep: #8ac6ae
+$em: #edbd59
+$minor: #9fb0a8
+
+$narrow: .25rem
+$half: .5rem
+$wide: .75rem
+$full: 1rem
+$twice: 2rem
+$thrice: 3rem
+$quad: 4rem
+
+html, body
+  height: 100%
+
+body
+  display: flex
+  justify-content: center
+  align-items: center
+  margin: 0
+  font-size: $full
+
+#root
+  display: flex
+  flex-flow: column wrap
+  align-items: center
+
+.login-box
+  display: grid
+  grid-template-columns: repeat(2, auto)
+  gap: $full
+  padding: $twice $thrice
+  background: $light
+  > label
+    position: relative
+    grid-column: 1 / 3
+    display: flex
+    align-items: center
+    color: $deep
+    > i
+      position: absolute
+      left: $half
+    > input
+      display: inline-block
+      width: 20rem
+      padding: $wide
+      padding-left: $twice
+      border: 0
+      outline: 0
+      font-size: inherit
+      color: inherit
+      &:focus
+        outline: $deep solid 2px
+  > button
+    padding: $wide
+    border: 0
+    font-size: inherit
+    color: white
+
+.login-avatar
+  display: flex
+  justify-content: center
+  align-items: center
+  width: $quad * 2
+  height: $twice * 2
+  background: $deep
+  border-radius: $twice * 2 $twice * 2 0 0
+  color: white
+
+[name="login"]
+  background: $deep
+
+[name="register"]
+  background: $em
+
+[name="forgot-pwd"]
+  grid-column: 1 / 3
+  background: $minor
