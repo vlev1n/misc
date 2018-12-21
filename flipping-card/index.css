@@ -1,0 +1,14 @@
+flipping-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  background: teal;
+  font-size: 4rem;
+  color: white;
+  perspective: 100rem;
+  transition: all 0.5s;
+}
+
+/*# sourceMappingURL=index.css.map */
